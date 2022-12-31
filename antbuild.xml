@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="default" name="Create Runnable Jar for Project RequestCameraPermission with libraries in sub-folder">
+	<property name="dir.buildfile" value="." />
+	<property name="dir.workspace" value="${dir.buildfile}/.." />
+	<property name="dir.jarfile" value="${dir.buildfile}/dist" />
+
+
+	<taskdef name="bundleapp" classname="com.oracle.appbundler.AppBundlerTask" classpath="libs/appbundler-1.0ea.jar" />
+
+	<record name="build.log" loglevel="verbose" action="start"/>
+
+	<target name="default" depends="create_run_jar">
+		<tstamp>
+			<format property="YEAR" pattern="yyyy" locale="de,DE" />
+		</tstamp>
+		<bundleapp outputdirectory="app" name="RequestCameraPermission" displayname="RequestCameraPermission" identifier="de.olf.requestcamaccess" shortversion="1.0" icon="dab.icns" copyright="© ${YEAR} Olaf Brandt" mainclassname="de.olf.requestcamaccess.Requestor">
+
+			<runtime dir="/Library/Java/JavaVirtualMachines/temurin-19.jdk/Contents/Home/" />
+
+			<plistentry key="NSCameraUsageDescription" value="Allow RequestCameraPermission to access the camera." />
+
+			<classpath file="dist/requestor.jar" />
+			<classpath file="dist/rv_lib/*.jar" />
+			<option value="-Xdock:icon=Contents/Resources/dab.icns" />
+			<option value="-Dapple.laf.useScreenMenuBar=true" />
+			<option value="-Dcom.apple.macos.use-file-dialog-packages=true" />
+			<option value="-Dcom.apple.macos.useScreenMenuBar=true" />
+			<option value="-Dapple.awt.application.name=RequestCameraPermission" />
+			<option value="-Dcom.apple.smallTabs=true" />
+			<argument value="/dev/cu.usbserial-14620" />
+		</bundleapp>
+
+		<sleep seconds="2" />
+
+		<exec executable="codesign">
+			<arg value="--deep" />
+			<arg value="--force" />
+			<arg value="-s" />
+
+			<arg value="Developer ID Application: Olaf Brandt (FX7Y394234)" />
+			<arg value="app/RequestCameraPermission.app" />
+		</exec>
+
+		<exec executable="spctl">
+			<arg value="--assess" />
+			<arg value="--verbose=4" />
+			<arg value="--type" />
+			<arg value="execute" />
+			<arg value="app/RequestCameraPermission.app" />
+		</exec>
+
+	</target>
+
+
+	<target name="create_run_jar">
+
+		<exec dir="${dir.buildfile}/src" executable="swiftc">
+			<arg value="Requestor.swift" />
+			<arg value="-emit-library" />
+			<arg value="-o" />
+			<arg value="libSwiftCode.dylib" />
+			<arg value="-Xlinker" />
+			<arg value="-install_name" />
+			<arg value="-Xlinker" />
+			<arg value="libSwiftCode.dylib" />
+		</exec>
+
+		<exec dir="${dir.buildfile}/src" executable="javac">
+			<arg value="-cp" />
+			<arg value="../native-utils-1.0-SNAPSHOT.jar" />
+			<arg value="-h" />
+			<arg value="." />
+			<arg value="de/olf/requestcamaccess/Requestor.java" />
+		</exec>
+
+		<exec dir="${dir.buildfile}/src" executable="gcc">
+			<arg line='-I"/Library/Java/JavaVirtualMachines/temurin-19.jdk/Contents/Home//include" -I"/Library/Java/JavaVirtualMachines/temurin-19.jdk/Contents/Home//include/darwin/" -o libSwiftRequestAccess.dylib -dynamiclib de_olf_requestcamaccess_requestor.c libSwiftCode.dylib'/>
+		</exec>
+
+		<delete dir="${dir.jarfile}/rv_lib" />
+		<mkdir dir="${dir.jarfile}/rv_lib" />
+		<delete dir="${dir.buildfile}/app" />
+		<mkdir dir="${dir.buildfile}/app" />
+		<copy file="${dir.buildfile}/src/libSwiftCode.dylib" todir="${dir.jarfile}/rv_lib" />
+		<copy file="${dir.buildfile}/src/libSwiftRequestAccess.dylib" todir="${dir.jarfile}/rv_lib" />
+		<copy file="${dir.buildfile}/native-utils-1.0-SNAPSHOT.jar" todir="${dir.jarfile}/rv_lib" />
+		<jar destfile="${dir.jarfile}/requestor.jar">
+			<manifest>
+				<attribute name="Main-Class" value="de.olf.requestcamaccess.Requestor" />
+				<attribute name="Class-Path" value=". rv_lib/native-utils-1.0-SNAPSHOT.jar" />
+			</manifest>
+			<fileset dir="${dir.buildfile}/bin" />
+			<fileset dir="${dir.jarfile}/rv_lib" />
+		</jar>
+
+
+	</target>
+</project>
