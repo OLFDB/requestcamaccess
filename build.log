@@ -1,0 +1,209 @@
+Build sequence for target(s) `default' is [create_run_jar, default]
+Complete build sequence is [create_run_jar, default, ]
+
+create_run_jar:
+     [exec] Current OS is Mac OS X
+     [exec] Executing 'swiftc' with arguments:
+'Requestor.swift'
+'-emit-library'
+'-o'
+'libSwiftCode.dylib'
+'-Xlinker'
+'-install_name'
+'-Xlinker'
+'libSwiftCode.dylib'
+
+The ' characters around the executable and arguments are
+not part of the command.
+     [exec] Current OS is Mac OS X
+     [exec] Executing 'javac' with arguments:
+'-cp'
+'../native-utils-1.0-SNAPSHOT.jar'
+'-h'
+'.'
+'de/olf/requestcamaccess/Requestor.java'
+
+The ' characters around the executable and arguments are
+not part of the command.
+     [exec] Current OS is Mac OS X
+     [exec] Executing 'gcc' with arguments:
+'-I/Library/Java/JavaVirtualMachines/temurin-19.jdk/Contents/Home//include'
+'-I/Library/Java/JavaVirtualMachines/temurin-19.jdk/Contents/Home//include/darwin/'
+'-o'
+'libSwiftRequestAccess.dylib'
+'-dynamiclib'
+'de_olf_requestcamaccess_requestor.c'
+'libSwiftCode.dylib'
+
+The ' characters around the executable and arguments are
+not part of the command.
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/rv_lib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/rv_lib/libSwiftCode.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/rv_lib/libSwiftRequestAccess.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/rv_lib/native-utils-1.0-SNAPSHOT.jar
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/rv_lib
+    [mkdir] Created dir: /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/rv_lib
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/.DS_Store
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/_CodeSignature/CodeResources
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/_CodeSignature
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/Info.plist
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/Java/native-utils-1.0-SNAPSHOT.jar
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/Java/requestor.jar
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/Java
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/MacOS/JavaAppLauncher
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/MacOS
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PkgInfo
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/_CodeSignature/CodeResources
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/_CodeSignature
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/classlist
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/ct.sym
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/fontconfig.bfc
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/fontconfig.properties.src
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/jfr/default.jfc
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/jfr/profile.jfc
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/jfr
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/jrt-fs.jar
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/jspawnhelper
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/jvm.cfg
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libattach.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libawt.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libawt_lwawt.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libdt_socket.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libextnet.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libfontmanager.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libfreetype.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libinstrument.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libj2gss.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libj2pcsc.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libj2pkcs11.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libjaas.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libjava.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libjavajpeg.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libjawt.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libjdwp.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libjimage.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libjli.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libjsig.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libjsound.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/liblcms.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libmanagement.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libmanagement_agent.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libmanagement_ext.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libmlib_image.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libnet.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libnio.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libosx.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libosxapp.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libosxkrb5.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libosxsecurity.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libosxui.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libprefs.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/librmi.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libsaproc.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libsplashscreen.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libsyslookup.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libverify.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/libzip.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/modules
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/psfont.properties.ja
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/psfontj2d.properties
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/security/blocked.certs
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/security/cacerts
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/security/default.policy
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/security/public_suffix_list.dat
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/security
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/server/classes.jsa
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/server/classes_nocoops.jsa
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/server/libjsig.dylib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/server/libjvm.dylib
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/server
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/shaders.metallib
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/src.zip
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib/tzdb.dat
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home/lib
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Home
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/Info.plist
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/MacOS/libjli.dylib
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents/MacOS
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk/Contents
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns/temurin-19.jdk
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/PlugIns
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/Resources/dab.icns
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/Resources/de.lproj/Localizable.strings
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/Resources/de.lproj
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/Resources/en.lproj/Localizable.strings
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/Resources/en.lproj
+   [delete] Deleting /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/Resources/fr.lproj/Localizable.strings
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/Resources/fr.lproj
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents/Resources
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app/Contents
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app/RequestCameraPermission.app
+   [delete] Deleting directory /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app
+    [mkdir] Created dir: /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/app
+     [copy] Copying 1 file to /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/rv_lib
+     [copy] Copying /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/src/libSwiftCode.dylib to /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/rv_lib/libSwiftCode.dylib
+     [copy] Copying 1 file to /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/rv_lib
+     [copy] Copying /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/src/libSwiftRequestAccess.dylib to /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/rv_lib/libSwiftRequestAccess.dylib
+     [copy] Copying 1 file to /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/rv_lib
+     [copy] Copying /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/native-utils-1.0-SNAPSHOT.jar to /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/rv_lib/native-utils-1.0-SNAPSHOT.jar
+      [jar] Requestor.swift omitted as /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/requestor.jar:Requestor.swift is up to date.
+      [jar] de/olf/requestcamaccess/Requestor.class added as de/olf/requestcamaccess/Requestor.class is outdated.
+      [jar] de_olf_requestcamaccess_Requestor.c omitted as /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/requestor.jar:de_olf_requestcamaccess_Requestor.c is up to date.
+      [jar] de_olf_requestcamaccess_Requestor.h added as de_olf_requestcamaccess_Requestor.h is outdated.
+      [jar] de_olf_requestcamaccess_Requestor_swift.h omitted as /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/requestor.jar:de_olf_requestcamaccess_Requestor_swift.h is up to date.
+      [jar] libSwiftCode.dylib omitted as /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/requestor.jar:libSwiftCode.dylib is up to date.
+      [jar] libSwiftRequestAccess.dylib omitted as /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/requestor.jar:libSwiftRequestAccess.dylib is up to date.
+      [jar] de omitted as /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/requestor.jar:de/ is up to date.
+      [jar] de/olf omitted as /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/requestor.jar:de/olf/ is up to date.
+      [jar] de/olf/requestcamaccess omitted as /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/requestor.jar:de/olf/requestcamaccess/ is up to date.
+      [jar] Building jar: /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/dist/requestor.jar
+      [jar] adding directory META-INF/
+      [jar] adding entry META-INF/MANIFEST.MF
+      [jar] adding directory de/
+      [jar] adding directory de/olf/
+      [jar] adding directory de/olf/requestcamaccess/
+      [jar] adding entry Requestor.swift
+      [jar] adding entry de/olf/requestcamaccess/Requestor.class
+      [jar] adding entry de_olf_requestcamaccess_Requestor.c
+      [jar] adding entry de_olf_requestcamaccess_Requestor.h
+      [jar] adding entry de_olf_requestcamaccess_Requestor_swift.h
+      [jar] adding entry libSwiftCode.dylib
+      [jar] adding entry libSwiftRequestAccess.dylib
+      [jar] duplicate file libSwiftCode.dylib found, adding.
+      [jar] duplicate file libSwiftRequestAccess.dylib found, adding.
+      [jar] adding entry native-utils-1.0-SNAPSHOT.jar
+      [jar] No Implementation-Title set.No Implementation-Version set.No Implementation-Vendor set.
+Location: /Volumes/Data/Users/olf/Documents/workspacemedia/workspace/RequestCameraPermission/antbuild.xml:87: 
+create_run_jar:  duration 1 second
+
+default:
+[bundleapp] Creating app bundle: RequestCameraPermission
+    [sleep] sleeping for 2000 milliseconds
+     [exec] Current OS is Mac OS X
+     [exec] Executing 'codesign' with arguments:
+'--deep'
+'--force'
+'-s'
+'Developer ID Application: Olaf Brandt (FX7Y394234)'
+'app/RequestCameraPermission.app'
+
+The ' characters around the executable and arguments are
+not part of the command.
+     [exec] app/RequestCameraPermission.app: replacing existing signature
+     [exec] Current OS is Mac OS X
+     [exec] Executing 'spctl' with arguments:
+'--assess'
+'--verbose=4'
+'--type'
+'execute'
+'app/RequestCameraPermission.app'
+
+The ' characters around the executable and arguments are
+not part of the command.
+     [exec] app/RequestCameraPermission.app: accepted
+     [exec] source=Developer ID
+default:  duration 6 seconds
+BUILD SUCCESSFUL
+
+BUILD SUCCESSFUL
